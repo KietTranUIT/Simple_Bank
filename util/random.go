@@ -41,6 +41,11 @@ func RandomMoney() int64 {
 	return RandomInt(0, 100)
 }
 
+// RandomAmountEntry generates a random amount of money (canbe negative or positive)
+func RandomAmountEntry() int64 {
+	return RandomInt(-100, 100)
+}
+
 func RandomCurrency() string {
 	n := len(currencies)
 	return currencies[rand.Intn(n)]
